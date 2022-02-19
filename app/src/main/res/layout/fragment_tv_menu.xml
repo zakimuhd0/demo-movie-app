@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.view.fragment.tv.TvMenuFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/recentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="Aired Recently" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/openAll"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_margin="3dp"-->
+        <!--            android:paddingTop="15dp"-->
+        <!--            android:paddingRight="15dp"-->
+        <!--            android:src="@drawable/ic_open" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/airedRecentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recentLabel"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

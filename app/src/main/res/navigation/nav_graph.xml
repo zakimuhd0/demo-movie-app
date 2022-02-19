@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tvMenuFragment">
+
+    <fragment
+        android:id="@+id/tvMenuFragment"
+        android:name="com.example.demomovieapp.view.view.fragment.tv.TvMenuFragment"
+        android:label="fragment_tv_menu"
+        tools:layout="@layout/fragment_tv_menu" >
+        <action
+            android:id="@+id/action_tvMenuFragment_to_tvDetailFragment"
+            app:destination="@id/tvDetailFragment" />
+        <action
+            android:id="@+id/action_tvMenuFragment_to_tvListFragment"
+            app:destination="@id/tvListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvDetailFragment"
+        android:name="com.example.demomovieapp.view.view.fragment.tv.tvDetailFragment"
+        android:label="fragment_tv_detail"
+        tools:layout="@layout/fragment_tv_detail" />
+    <fragment
+        android:id="@+id/tvListFragment"
+        android:name="com.example.demomovieapp.view.view.fragment.tv.tvListFragment"
+        android:label="fragment_tv_list"
+        tools:layout="@layout/fragment_tv_list" />
+    <fragment
+        android:id="@+id/movieMenuFragment"
+        android:name="com.example.demomovieapp.movieMenuFragment"
+        android:label="fragment_movie_menu"
+        tools:layout="@layout/fragment_movie_menu" >
+        <action
+            android:id="@+id/action_movieMenuFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+        <action
+            android:id="@+id/action_movieMenuFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.demomovieapp.movieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" />
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.example.demomovieapp.movieListFragment"
+        android:label="fragment_movie_list"
+        tools:layout="@layout/fragment_movie_list" />
+</navigation>
